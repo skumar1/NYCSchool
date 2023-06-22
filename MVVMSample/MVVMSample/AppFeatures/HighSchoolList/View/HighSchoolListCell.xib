@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="HighSchoolListCell" rowHeight="125" id="KGk-i7-Jjw" customClass="HighSchoolListCell" customModule="MVVMSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Sample Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPW-d7-ehg">
+                        <rect key="frame" x="16" y="16" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Test Email Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43j-RC-UXw">
+                        <rect key="frame" x="16" y="66" width="294" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Test Website link" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xf-zq-KC2">
+                        <rect key="frame" x="16" y="86" width="211" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4q-df-XM0" userLabel="Phone">
+                        <rect key="frame" x="232" y="88" width="72" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test City Zip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mon-mA-3bE" userLabel="City Zip Lbl">
+                        <rect key="frame" x="16" y="43" width="288" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="43j-RC-UXw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="0dR-Pa-wZk"/>
+                    <constraint firstAttribute="trailing" secondItem="lPW-d7-ehg" secondAttribute="trailing" constant="16" id="8ou-Lk-Czx"/>
+                    <constraint firstAttribute="bottom" secondItem="9xf-zq-KC2" secondAttribute="bottom" constant="16" id="BGM-0J-Vxt"/>
+                    <constraint firstItem="O4q-df-XM0" firstAttribute="firstBaseline" secondItem="9xf-zq-KC2" secondAttribute="firstBaseline" constant="2" id="H6m-E8-uq8"/>
+                    <constraint firstAttribute="trailing" secondItem="mon-mA-3bE" secondAttribute="trailing" constant="16" id="Oup-nH-etk"/>
+                    <constraint firstItem="mon-mA-3bE" firstAttribute="bottom" secondItem="lPW-d7-ehg" secondAttribute="bottom" constant="23" id="TlB-gH-pce"/>
+                    <constraint firstItem="9xf-zq-KC2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Ui0-c2-4k2"/>
+                    <constraint firstItem="9xf-zq-KC2" firstAttribute="top" secondItem="43j-RC-UXw" secondAttribute="bottom" constant="3" id="X0p-Ls-nfZ"/>
+                    <constraint firstAttribute="trailing" secondItem="O4q-df-XM0" secondAttribute="trailing" constant="16" id="aCV-VO-nge"/>
+                    <constraint firstItem="mon-mA-3bE" firstAttribute="top" secondItem="lPW-d7-ehg" secondAttribute="top" constant="27" id="d3O-g6-kYg"/>
+                    <constraint firstItem="lPW-d7-ehg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="gLy-B6-Exx"/>
+                    <constraint firstItem="O4q-df-XM0" firstAttribute="leading" secondItem="9xf-zq-KC2" secondAttribute="trailing" constant="5" id="l7t-YY-hYb"/>
+                    <constraint firstItem="lPW-d7-ehg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="msz-lv-JcR"/>
+                    <constraint firstItem="43j-RC-UXw" firstAttribute="top" secondItem="mon-mA-3bE" secondAttribute="top" constant="23" id="mvo-1m-SoE"/>
+                    <constraint firstAttribute="trailing" secondItem="43j-RC-UXw" secondAttribute="trailing" constant="10" id="n6D-3W-DSM"/>
+                    <constraint firstItem="mon-mA-3bE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="qIn-yI-8Vc"/>
+                    <constraint firstItem="9xf-zq-KC2" firstAttribute="top" secondItem="43j-RC-UXw" secondAttribute="bottom" constant="3" id="z8h-Al-aYe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="schoolCityZipLbl" destination="mon-mA-3bE" id="D4R-GV-uMm"/>
+                <outlet property="schoolEmailAddressLbl" destination="43j-RC-UXw" id="IZY-d9-0Y0"/>
+                <outlet property="schoolNameLbl" destination="lPW-d7-ehg" id="WYV-Sr-Aao"/>
+                <outlet property="schoolPhoneLbl" destination="O4q-df-XM0" id="IUa-4x-Am2"/>
+                <outlet property="schoolWebsiteLinkLbl" destination="9xf-zq-KC2" id="Y4K-Oi-Dbn"/>
+            </connections>
+            <point key="canvasLocation" x="-69.230769230769226" y="15.284360189573459"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
